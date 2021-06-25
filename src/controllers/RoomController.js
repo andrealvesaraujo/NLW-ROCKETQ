@@ -8,6 +8,8 @@ module.exports = {
         let roomId
         const pass = req.body.password
 
+        // Verificar se o id já existe
+
         for(var i=0; i< 6; i++) {
             i == 0 ? roomId = Math.floor(Math.random() * 10).toString() : 
             roomId += Math.floor(Math.random() * 10).toString()
