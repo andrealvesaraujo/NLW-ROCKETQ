@@ -4,7 +4,7 @@
   "description": "Projeto desenvolvido para gerenciar perguntas anonimas direcionadas ao dono da página. Projeto desenvolvido na semana NLW Rocketseat na missão discover",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon .",
+    "start": "node .",
     "init-db": "node src/db/init.js"
   },
   "repository": {
@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "14.17.1"
   }
 }
