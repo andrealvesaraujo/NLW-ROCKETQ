@@ -1,7 +1,7 @@
 const Database = require("../db/config")
 
 module.exports = {
-    async create(req, res) {
+    async create(req, res) {        
 
         const db = await Database()
 
@@ -19,8 +19,8 @@ module.exports = {
                 pass
             )
             VALUES (
-                ${parseInt(roomId)},
-                ${pass}
+                "${parseInt(roomId)}",
+                "${pass}"
             )
         `)
 
