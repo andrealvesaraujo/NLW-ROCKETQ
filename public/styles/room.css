@@ -153,6 +153,10 @@
     margin-left: 2.4rem;
 }
 
+.question-wrapper .actions > a.checked {
+    cursor: no-drop;
+}
+
 /* Question Read */
 
 .question-wrapper.read {
@@ -161,4 +165,29 @@
 
 .question-wrapper.read .question-content .user{
     background: var(--grey-blue);
+}
+
+.no-questions {
+    text-align: center;
+    margin-top: 5.2rem;
+}
+
+.no-questions img {
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+
+.no-questions p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.no-questions p + p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1.3rem;
+    line-height: 1.9rem;
 }

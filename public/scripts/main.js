@@ -26,6 +26,11 @@ deleteButtons.forEach( (button)=> {
 function handleClick(event, check = true) {
     
     event.preventDefault()    
+
+    if(event.target.classList.contains("checked")) {
+        return
+    }
+
     const text = check ? "Marcar como lida" : "Excluir"
 
     const slug = check ? "check" : "delete"
